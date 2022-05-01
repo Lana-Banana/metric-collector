@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Controller Test (Search)</title>
+</head>
+<body>
+    <table class="tb_col">
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>email</th>
+        </tr>
+        <tr th:each="user : ${userList}">
+            <td th:text="${user.userId}"></td>
+            <td th:text="${user.userName}"></td>
+            <td th:text="${user.userEmail}"></td>
+        </tr>
+    </table>
+</body>
+</html>
